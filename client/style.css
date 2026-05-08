@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#connection-status {
+  color: green;
+}
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notification {
+  padding: 14px;
+  border-radius: 8px;
+  background: #eef4ff;
+  border-left: 5px solid #3b82f6;
+}
+
+.notification-time {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
