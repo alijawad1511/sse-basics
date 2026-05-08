@@ -1,6 +1,6 @@
 # Server-Sent Events (SSE) Demo (Node.js)
 
-Small demo project that shows how server send real-time updates to client using **Server-Sent Events (SSE)**.
+Small demo project that shows how a server sends real-time updates to a client using **Server-Sent Events (SSE)**.
 
 SSE is a simple way for a server to push live updates to the browser over a single HTTP connection (one-way: server to client). It is useful when the client mainly needs to receive data, such as live notifications, activity feeds, dashboard metrics, stock/news tickers, and background job status updates.
 
@@ -9,6 +9,14 @@ SSE is a simple way for a server to push live updates to the browser over a sing
 - **Backend:** Node.js, Express, CORS
 - **Frontend:** HTML, CSS, Vanilla JavaScript
 - **Protocol:** Server-Sent Events over HTTP
+
+## What This Demo Shows
+
+- SSE connection lifecycle in browser (`Connecting`, `Connected`, `Reconnecting/Disconnected`)
+- Real-time notification stream from server every ~2 seconds
+- Structured event payloads from server (`id`, `type`, `title`, `message`, `severity`, `createdAt`)
+- UI rendering of notifications with severity-based styles (`info`, `success`, `warning`, `error`)
+- Basic client-side robustness (safe JSON parsing, empty state, clear button, capped notification list)
 
 ## Run Locally
 
